@@ -1,0 +1,832 @@
+{
+  "_readableState": {
+    "objectMode": false,
+    "highWaterMark": 16384,
+    "buffer": [],
+    "length": 0,
+    "pipes": null,
+    "pipesCount": 0,
+    "flowing": null,
+    "ended": false,
+    "endEmitted": false,
+    "reading": false,
+    "sync": true,
+    "needReadable": false,
+    "emittedReadable": false,
+    "readableListening": false,
+    "defaultEncoding": "utf8",
+    "ranOut": false,
+    "awaitDrain": 0,
+    "readingMore": false,
+    "decoder": null,
+    "encoding": null
+  },
+  "readable": true,
+  "domain": null,
+  "_events": {},
+  "socket": {
+    "_connecting": false,
+    "_hadError": false,
+    "_handle": {
+      "fd": 25,
+      "reading": true,
+      "owner": "[Circular ~.socket]",
+      "onconnection": null,
+      "writeQueueSize": 0
+    },
+    "_parent": null,
+    "_host": null,
+    "_readableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "buffer": [],
+      "length": 0,
+      "pipes": null,
+      "pipesCount": 0,
+      "flowing": true,
+      "ended": false,
+      "endEmitted": false,
+      "reading": false,
+      "sync": false,
+      "needReadable": true,
+      "emittedReadable": false,
+      "readableListening": false,
+      "defaultEncoding": "utf8",
+      "ranOut": false,
+      "awaitDrain": 0,
+      "readingMore": false,
+      "decoder": null,
+      "encoding": null,
+      "resumeScheduled": false
+    },
+    "readable": true,
+    "domain": null,
+    "_events": {
+      "end": [
+        null,
+        null
+      ],
+      "drain": [
+        null,
+        null
+      ],
+      "close": [
+        null,
+        null
+      ]
+    },
+    "_writableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "needDrain": false,
+      "ending": false,
+      "ended": false,
+      "finished": false,
+      "decodeStrings": false,
+      "defaultEncoding": "utf8",
+      "length": 0,
+      "writing": false,
+      "corked": 0,
+      "sync": true,
+      "bufferProcessing": false,
+      "writecb": null,
+      "writelen": 0,
+      "bufferedRequest": null,
+      "lastBufferedRequest": null,
+      "pendingcb": 0,
+      "prefinished": false,
+      "errorEmitted": false
+    },
+    "writable": true,
+    "allowHalfOpen": true,
+    "destroyed": false,
+    "bytesRead": 1357,
+    "_bytesDispatched": 0,
+    "_pendingData": null,
+    "_pendingEncoding": "",
+    "server": {
+      "domain": null,
+      "_events": {},
+      "_connections": 1,
+      "_handle": {
+        "fd": 24,
+        "reading": false,
+        "owner": "[Circular ~.socket.server]",
+        "onread": null,
+        "writeQueueSize": 0
+      },
+      "_usingSlaves": false,
+      "_slaves": [],
+      "allowHalfOpen": true,
+      "pauseOnConnect": false,
+      "httpAllowHalfOpen": false,
+      "timeout": 120000,
+      "_connectionKey": "4:null:8080"
+    },
+    "_idleTimeout": 120000,
+    "_idleNext": {
+      "_idleNext": "[Circular ~.socket]",
+      "_idlePrev": "[Circular ~.socket]"
+    },
+    "_idlePrev": {
+      "_idleNext": "[Circular ~.socket]",
+      "_idlePrev": "[Circular ~.socket]"
+    },
+    "_idleStart": 1879858,
+    "parser": {
+      "_headers": [],
+      "_url": "",
+      "socket": "[Circular ~.socket]",
+      "incoming": "[Circular ~]",
+      "maxHeaderPairs": 2000
+    },
+    "_paused": false,
+    "_consuming": true,
+    "_httpMessage": {
+      "domain": null,
+      "_events": {},
+      "output": [],
+      "outputEncodings": [],
+      "outputCallbacks": [],
+      "writable": true,
+      "_last": false,
+      "chunkedEncoding": false,
+      "shouldKeepAlive": false,
+      "useChunkedEncodingByDefault": true,
+      "sendDate": true,
+      "_removedHeader": {},
+      "_hasBody": true,
+      "_trailer": "",
+      "finished": false,
+      "_hangupClose": false,
+      "_headerSent": false,
+      "socket": "[Circular ~.socket]",
+      "connection": "[Circular ~.socket]",
+      "_header": null,
+      "_headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "X-Requested-With, Content-Type"
+      },
+      "_headerNames": {
+        "x-powered-by": "X-Powered-By",
+        "access-control-allow-origin": "Access-Control-Allow-Origin",
+        "access-control-allow-headers": "Access-Control-Allow-Headers"
+      },
+      "req": "[Circular ~]",
+      "locals": {}
+    }
+  },
+  "connection": {
+    "_connecting": false,
+    "_hadError": false,
+    "_handle": {
+      "fd": 25,
+      "reading": true,
+      "owner": "[Circular ~.connection]",
+      "onconnection": null,
+      "writeQueueSize": 0
+    },
+    "_parent": null,
+    "_host": null,
+    "_readableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "buffer": [],
+      "length": 0,
+      "pipes": null,
+      "pipesCount": 0,
+      "flowing": true,
+      "ended": false,
+      "endEmitted": false,
+      "reading": false,
+      "sync": false,
+      "needReadable": true,
+      "emittedReadable": false,
+      "readableListening": false,
+      "defaultEncoding": "utf8",
+      "ranOut": false,
+      "awaitDrain": 0,
+      "readingMore": false,
+      "decoder": null,
+      "encoding": null,
+      "resumeScheduled": false
+    },
+    "readable": true,
+    "domain": null,
+    "_events": {
+      "end": [
+        null,
+        null
+      ],
+      "drain": [
+        null,
+        null
+      ],
+      "close": [
+        null,
+        null
+      ]
+    },
+    "_writableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "needDrain": false,
+      "ending": false,
+      "ended": false,
+      "finished": false,
+      "decodeStrings": false,
+      "defaultEncoding": "utf8",
+      "length": 0,
+      "writing": false,
+      "corked": 0,
+      "sync": true,
+      "bufferProcessing": false,
+      "writecb": null,
+      "writelen": 0,
+      "bufferedRequest": null,
+      "lastBufferedRequest": null,
+      "pendingcb": 0,
+      "prefinished": false,
+      "errorEmitted": false
+    },
+    "writable": true,
+    "allowHalfOpen": true,
+    "destroyed": false,
+    "bytesRead": 1357,
+    "_bytesDispatched": 0,
+    "_pendingData": null,
+    "_pendingEncoding": "",
+    "server": {
+      "domain": null,
+      "_events": {},
+      "_connections": 1,
+      "_handle": {
+        "fd": 24,
+        "reading": false,
+        "owner": "[Circular ~.connection.server]",
+        "onread": null,
+        "writeQueueSize": 0
+      },
+      "_usingSlaves": false,
+      "_slaves": [],
+      "allowHalfOpen": true,
+      "pauseOnConnect": false,
+      "httpAllowHalfOpen": false,
+      "timeout": 120000,
+      "_connectionKey": "4:null:8080"
+    },
+    "_idleTimeout": 120000,
+    "_idleNext": {
+      "_idleNext": "[Circular ~.connection]",
+      "_idlePrev": "[Circular ~.connection]"
+    },
+    "_idlePrev": {
+      "_idleNext": "[Circular ~.connection]",
+      "_idlePrev": "[Circular ~.connection]"
+    },
+    "_idleStart": 1879858,
+    "parser": {
+      "_headers": [],
+      "_url": "",
+      "socket": "[Circular ~.connection]",
+      "incoming": "[Circular ~]",
+      "maxHeaderPairs": 2000
+    },
+    "_paused": false,
+    "_consuming": true,
+    "_httpMessage": {
+      "domain": null,
+      "_events": {},
+      "output": [],
+      "outputEncodings": [],
+      "outputCallbacks": [],
+      "writable": true,
+      "_last": false,
+      "chunkedEncoding": false,
+      "shouldKeepAlive": false,
+      "useChunkedEncodingByDefault": true,
+      "sendDate": true,
+      "_removedHeader": {},
+      "_hasBody": true,
+      "_trailer": "",
+      "finished": false,
+      "_hangupClose": false,
+      "_headerSent": false,
+      "socket": "[Circular ~.connection]",
+      "connection": "[Circular ~.connection]",
+      "_header": null,
+      "_headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "X-Requested-With, Content-Type"
+      },
+      "_headerNames": {
+        "x-powered-by": "X-Powered-By",
+        "access-control-allow-origin": "Access-Control-Allow-Origin",
+        "access-control-allow-headers": "Access-Control-Allow-Headers"
+      },
+      "req": "[Circular ~]",
+      "locals": {}
+    }
+  },
+  "httpVersionMajor": 1,
+  "httpVersionMinor": 1,
+  "httpVersion": "1.1",
+  "complete": false,
+  "headers": {
+    "accept-encoding": "identity",
+    "content-length": "1065",
+    "host": "localhost:8080",
+    "content-type": "multipart/form-data; boundary=----------ThIs_Is_tHe_bouNdaRY_$",
+    "connection": "close",
+    "user-agent": "TournamentManager/2.0 (Darwin-16.1.0-x86_64-i386-64bit, i386)"
+  },
+  "rawHeaders": [
+    "Accept-Encoding",
+    "identity",
+    "Content-Length",
+    "1065",
+    "Host",
+    "localhost:8080",
+    "Content-Type",
+    "multipart/form-data; boundary=----------ThIs_Is_tHe_bouNdaRY_$",
+    "Connection",
+    "close",
+    "User-Agent",
+    "TournamentManager/2.0 (Darwin-16.1.0-x86_64-i386-64bit, i386)"
+  ],
+  "trailers": {},
+  "rawTrailers": [],
+  "_pendings": [],
+  "_pendingIndex": 0,
+  "upgrade": false,
+  "url": "/tmshook?type=matchupdate&div=1",
+  "method": "POST",
+  "statusCode": null,
+  "statusMessage": null,
+  "client": {
+    "_connecting": false,
+    "_hadError": false,
+    "_handle": {
+      "fd": 25,
+      "reading": true,
+      "owner": "[Circular ~.client]",
+      "onconnection": null,
+      "writeQueueSize": 0
+    },
+    "_parent": null,
+    "_host": null,
+    "_readableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "buffer": [],
+      "length": 0,
+      "pipes": null,
+      "pipesCount": 0,
+      "flowing": true,
+      "ended": false,
+      "endEmitted": false,
+      "reading": false,
+      "sync": false,
+      "needReadable": true,
+      "emittedReadable": false,
+      "readableListening": false,
+      "defaultEncoding": "utf8",
+      "ranOut": false,
+      "awaitDrain": 0,
+      "readingMore": false,
+      "decoder": null,
+      "encoding": null,
+      "resumeScheduled": false
+    },
+    "readable": true,
+    "domain": null,
+    "_events": {
+      "end": [
+        null,
+        null
+      ],
+      "drain": [
+        null,
+        null
+      ],
+      "close": [
+        null,
+        null
+      ]
+    },
+    "_writableState": {
+      "objectMode": false,
+      "highWaterMark": 16384,
+      "needDrain": false,
+      "ending": false,
+      "ended": false,
+      "finished": false,
+      "decodeStrings": false,
+      "defaultEncoding": "utf8",
+      "length": 0,
+      "writing": false,
+      "corked": 0,
+      "sync": true,
+      "bufferProcessing": false,
+      "writecb": null,
+      "writelen": 0,
+      "bufferedRequest": null,
+      "lastBufferedRequest": null,
+      "pendingcb": 0,
+      "prefinished": false,
+      "errorEmitted": false
+    },
+    "writable": true,
+    "allowHalfOpen": true,
+    "destroyed": false,
+    "bytesRead": 1357,
+    "_bytesDispatched": 0,
+    "_pendingData": null,
+    "_pendingEncoding": "",
+    "server": {
+      "domain": null,
+      "_events": {},
+      "_connections": 1,
+      "_handle": {
+        "fd": 24,
+        "reading": false,
+        "owner": "[Circular ~.client.server]",
+        "onread": null,
+        "writeQueueSize": 0
+      },
+      "_usingSlaves": false,
+      "_slaves": [],
+      "allowHalfOpen": true,
+      "pauseOnConnect": false,
+      "httpAllowHalfOpen": false,
+      "timeout": 120000,
+      "_connectionKey": "4:null:8080"
+    },
+    "_idleTimeout": 120000,
+    "_idleNext": {
+      "_idleNext": "[Circular ~.client]",
+      "_idlePrev": "[Circular ~.client]"
+    },
+    "_idlePrev": {
+      "_idleNext": "[Circular ~.client]",
+      "_idlePrev": "[Circular ~.client]"
+    },
+    "_idleStart": 1879858,
+    "parser": {
+      "_headers": [],
+      "_url": "",
+      "socket": "[Circular ~.client]",
+      "incoming": "[Circular ~]",
+      "maxHeaderPairs": 2000
+    },
+    "_paused": false,
+    "_consuming": true,
+    "_httpMessage": {
+      "domain": null,
+      "_events": {},
+      "output": [],
+      "outputEncodings": [],
+      "outputCallbacks": [],
+      "writable": true,
+      "_last": false,
+      "chunkedEncoding": false,
+      "shouldKeepAlive": false,
+      "useChunkedEncodingByDefault": true,
+      "sendDate": true,
+      "_removedHeader": {},
+      "_hasBody": true,
+      "_trailer": "",
+      "finished": false,
+      "_hangupClose": false,
+      "_headerSent": false,
+      "socket": "[Circular ~.client]",
+      "connection": "[Circular ~.client]",
+      "_header": null,
+      "_headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "X-Requested-With, Content-Type"
+      },
+      "_headerNames": {
+        "x-powered-by": "X-Powered-By",
+        "access-control-allow-origin": "Access-Control-Allow-Origin",
+        "access-control-allow-headers": "Access-Control-Allow-Headers"
+      },
+      "req": "[Circular ~]",
+      "locals": {}
+    }
+  },
+  "_consuming": false,
+  "_dumped": false,
+  "baseUrl": "",
+  "originalUrl": "/tmshook?type=matchupdate&div=1",
+  "_parsedUrl": {
+    "protocol": null,
+    "slashes": null,
+    "auth": null,
+    "host": null,
+    "port": null,
+    "hostname": null,
+    "hash": null,
+    "search": "?type=matchupdate&div=1",
+    "query": "type=matchupdate&div=1",
+    "pathname": "/tmshook",
+    "path": "/tmshook?type=matchupdate&div=1",
+    "href": "/tmshook?type=matchupdate&div=1",
+    "_raw": "/tmshook?type=matchupdate&div=1"
+  },
+  "params": {},
+  "query": {
+    "type": "matchupdate",
+    "div": "1"
+  },
+  "res": {
+    "domain": null,
+    "_events": {},
+    "output": [],
+    "outputEncodings": [],
+    "outputCallbacks": [],
+    "writable": true,
+    "_last": false,
+    "chunkedEncoding": false,
+    "shouldKeepAlive": false,
+    "useChunkedEncodingByDefault": true,
+    "sendDate": true,
+    "_removedHeader": {},
+    "_hasBody": true,
+    "_trailer": "",
+    "finished": false,
+    "_hangupClose": false,
+    "_headerSent": false,
+    "socket": {
+      "_connecting": false,
+      "_hadError": false,
+      "_handle": {
+        "fd": 25,
+        "reading": true,
+        "owner": "[Circular ~.res.socket]",
+        "onconnection": null,
+        "writeQueueSize": 0
+      },
+      "_parent": null,
+      "_host": null,
+      "_readableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "buffer": [],
+        "length": 0,
+        "pipes": null,
+        "pipesCount": 0,
+        "flowing": true,
+        "ended": false,
+        "endEmitted": false,
+        "reading": false,
+        "sync": false,
+        "needReadable": true,
+        "emittedReadable": false,
+        "readableListening": false,
+        "defaultEncoding": "utf8",
+        "ranOut": false,
+        "awaitDrain": 0,
+        "readingMore": false,
+        "decoder": null,
+        "encoding": null,
+        "resumeScheduled": false
+      },
+      "readable": true,
+      "domain": null,
+      "_events": {
+        "end": [
+          null,
+          null
+        ],
+        "drain": [
+          null,
+          null
+        ],
+        "close": [
+          null,
+          null
+        ]
+      },
+      "_writableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "needDrain": false,
+        "ending": false,
+        "ended": false,
+        "finished": false,
+        "decodeStrings": false,
+        "defaultEncoding": "utf8",
+        "length": 0,
+        "writing": false,
+        "corked": 0,
+        "sync": true,
+        "bufferProcessing": false,
+        "writecb": null,
+        "writelen": 0,
+        "bufferedRequest": null,
+        "lastBufferedRequest": null,
+        "pendingcb": 0,
+        "prefinished": false,
+        "errorEmitted": false
+      },
+      "writable": true,
+      "allowHalfOpen": true,
+      "destroyed": false,
+      "bytesRead": 1357,
+      "_bytesDispatched": 0,
+      "_pendingData": null,
+      "_pendingEncoding": "",
+      "server": {
+        "domain": null,
+        "_events": {},
+        "_connections": 1,
+        "_handle": {
+          "fd": 24,
+          "reading": false,
+          "owner": "[Circular ~.res.socket.server]",
+          "onread": null,
+          "writeQueueSize": 0
+        },
+        "_usingSlaves": false,
+        "_slaves": [],
+        "allowHalfOpen": true,
+        "pauseOnConnect": false,
+        "httpAllowHalfOpen": false,
+        "timeout": 120000,
+        "_connectionKey": "4:null:8080"
+      },
+      "_idleTimeout": 120000,
+      "_idleNext": {
+        "_idleNext": "[Circular ~.res.socket]",
+        "_idlePrev": "[Circular ~.res.socket]"
+      },
+      "_idlePrev": {
+        "_idleNext": "[Circular ~.res.socket]",
+        "_idlePrev": "[Circular ~.res.socket]"
+      },
+      "_idleStart": 1879858,
+      "parser": {
+        "_headers": [],
+        "_url": "",
+        "socket": "[Circular ~.res.socket]",
+        "incoming": "[Circular ~]",
+        "maxHeaderPairs": 2000
+      },
+      "_paused": false,
+      "_consuming": true,
+      "_httpMessage": "[Circular ~.res]"
+    },
+    "connection": {
+      "_connecting": false,
+      "_hadError": false,
+      "_handle": {
+        "fd": 25,
+        "reading": true,
+        "owner": "[Circular ~.res.connection]",
+        "onconnection": null,
+        "writeQueueSize": 0
+      },
+      "_parent": null,
+      "_host": null,
+      "_readableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "buffer": [],
+        "length": 0,
+        "pipes": null,
+        "pipesCount": 0,
+        "flowing": true,
+        "ended": false,
+        "endEmitted": false,
+        "reading": false,
+        "sync": false,
+        "needReadable": true,
+        "emittedReadable": false,
+        "readableListening": false,
+        "defaultEncoding": "utf8",
+        "ranOut": false,
+        "awaitDrain": 0,
+        "readingMore": false,
+        "decoder": null,
+        "encoding": null,
+        "resumeScheduled": false
+      },
+      "readable": true,
+      "domain": null,
+      "_events": {
+        "end": [
+          null,
+          null
+        ],
+        "drain": [
+          null,
+          null
+        ],
+        "close": [
+          null,
+          null
+        ]
+      },
+      "_writableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "needDrain": false,
+        "ending": false,
+        "ended": false,
+        "finished": false,
+        "decodeStrings": false,
+        "defaultEncoding": "utf8",
+        "length": 0,
+        "writing": false,
+        "corked": 0,
+        "sync": true,
+        "bufferProcessing": false,
+        "writecb": null,
+        "writelen": 0,
+        "bufferedRequest": null,
+        "lastBufferedRequest": null,
+        "pendingcb": 0,
+        "prefinished": false,
+        "errorEmitted": false
+      },
+      "writable": true,
+      "allowHalfOpen": true,
+      "destroyed": false,
+      "bytesRead": 1357,
+      "_bytesDispatched": 0,
+      "_pendingData": null,
+      "_pendingEncoding": "",
+      "server": {
+        "domain": null,
+        "_events": {},
+        "_connections": 1,
+        "_handle": {
+          "fd": 24,
+          "reading": false,
+          "owner": "[Circular ~.res.connection.server]",
+          "onread": null,
+          "writeQueueSize": 0
+        },
+        "_usingSlaves": false,
+        "_slaves": [],
+        "allowHalfOpen": true,
+        "pauseOnConnect": false,
+        "httpAllowHalfOpen": false,
+        "timeout": 120000,
+        "_connectionKey": "4:null:8080"
+      },
+      "_idleTimeout": 120000,
+      "_idleNext": {
+        "_idleNext": "[Circular ~.res.connection]",
+        "_idlePrev": "[Circular ~.res.connection]"
+      },
+      "_idlePrev": {
+        "_idleNext": "[Circular ~.res.connection]",
+        "_idlePrev": "[Circular ~.res.connection]"
+      },
+      "_idleStart": 1879858,
+      "parser": {
+        "_headers": [],
+        "_url": "",
+        "socket": "[Circular ~.res.connection]",
+        "incoming": "[Circular ~]",
+        "maxHeaderPairs": 2000
+      },
+      "_paused": false,
+      "_consuming": true,
+      "_httpMessage": "[Circular ~.res]"
+    },
+    "_header": null,
+    "_headers": {
+      "x-powered-by": "Express",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "X-Requested-With, Content-Type"
+    },
+    "_headerNames": {
+      "x-powered-by": "X-Powered-By",
+      "access-control-allow-origin": "Access-Control-Allow-Origin",
+      "access-control-allow-headers": "Access-Control-Allow-Headers"
+    },
+    "req": "[Circular ~]",
+    "locals": {}
+  },
+  "body": {},
+  "route": {
+    "path": "/tmshook",
+    "stack": [
+      {
+        "name": "<anonymous>",
+        "keys": [],
+        "regexp": {},
+        "method": "post"
+      }
+    ],
+    "methods": {
+      "post": true
+    }
+  }
+}

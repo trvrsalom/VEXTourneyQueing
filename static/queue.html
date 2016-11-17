@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="./semantic/dist/semantic.css">
+		<script src="./jquery-3.1.1.min.js"></script>
+		<script src="./semantic/dist/semantic.min.js"></script>
+		<style>
+			body {
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='ui segment'>
+			Queuing Mode: <button class='ui primary basic button' id="mode" onClick='switchQueueMode()'>Pit Queuing</button>
+		</div>
+		<table class="ui celled table">
+		  <thead>
+		    <tr>
+		      <th>Match #</th>
+		      <th>Red 1</th>
+		      <th>Red 2</th>
+					<th>Blue 1</th>
+		      <th>Blue 2</th>
+					<th></th>
+		    </tr>
+		  </thead>
+		  <tbody id="matchList">
+
+		  </tbody>
+		</table>
+		<script type="text/javascript" src="./queue.js"></script>
+		<script type="text/javascript">
+			function getQueryParams(qs) {
+				qs = qs.split('+').join(' ');
+
+				var params = {},
+						tokens,
+						re = /[?&]?([^=]+)=([^&]*)/g;
+
+				while (tokens = re.exec(qs)) {
+						params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+				}
+
+				return params;
+			}
+			if(getQueryParams(document.location.search).type == 'field') {switchQueueMode();};
+		</script>
+	</body>
+</html>
