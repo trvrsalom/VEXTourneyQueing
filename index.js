@@ -39,10 +39,14 @@ else {
 			'r1_status': 0,
 			'r2': currmatch[6],
 			'r2_status': 0,
+			'r3': currmatch[7],
+			'r3_status': 0,
 			'b1': currmatch[8],
 			'b1_status': 0,
 			'b2': currmatch[9],
-			'b2_status': 0
+			'b2_status': 0,
+			'b3': currmatch[10],
+			'b3_status': 0
 		};
 	}
 }
@@ -73,8 +77,10 @@ function setTeamStatus(match, team, status) {
 function setMatchStatus(match, status) {
 	setTeamStatus(match, "r1", status);
 	setTeamStatus(match, "r2", status);
+	setTeamStatus(match, "r3", status);
 	setTeamStatus(match, "b1", status);
 	setTeamStatus(match, "b2", status);
+	setTeamStatus(match, "b3", status);
 }
 
 function parseSocketMessage(inp) {

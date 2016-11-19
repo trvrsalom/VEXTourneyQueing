@@ -2,7 +2,7 @@ var queueModes = ['Pit Queing', 'Field Queing'];
 var queueMode = 0;
 var queuingStatus = ["none", "toBeQueued", "called", "queued"];
 var socket;
-socket = new WebSocket("ws://localhost:8081");
+socket = new WebSocket("ws://162.243.153.213:8081");
 
 function getList(next) {
 	$.get( "/schedule/", function(data) {
@@ -67,7 +67,9 @@ function setWarningWholeMatch(match) {
 	setWarning(match, 'r1');
 	setWarning(match, 'b1');
 	setWarning(match, 'r2');
+	setWarning(match, 'r3');
 	setWarning(match, 'b2');
+	setWarning(match, 'b3');
 }
 
 function setMissingWholeMatch(match) {
@@ -75,6 +77,8 @@ function setMissingWholeMatch(match) {
 	setMissing(match, 'b1');
 	setMissing(match, 'r2');
 	setMissing(match, 'b2');
+	setMissing(match, 'r3');
+	setMissing(match, 'b3');
 }
 
 function setPositiveWholeMatch(match) {
@@ -82,6 +86,8 @@ function setPositiveWholeMatch(match) {
 	setPositive(match, 'b1');
 	setPositive(match, 'r2');
 	setPositive(match, 'b2');
+	setPositive(match, 'r3');
+	setPositive(match, 'b3');
 }
 
 function getCellStatus(match, spot) {
@@ -105,8 +111,10 @@ function addMatchRow(match) {
 	var r2c = statusToClass(match.r2_status);
 	var b1c = statusToClass(match.b1_status);
 	var b2c = statusToClass(match.b2_status);
+	var b3c = statusToClass(match.b3_status);
+	var r3c = statusToClass(match.b3_status);
 	console.log([r1c, r2c, b1c, b2c]);
-	var str = "<tr id='m" + match.matchNum + "'><td>" + match.matchNum + "</td><td id='m" + match.matchNum + "r1' class='" + r1c + "' onclick='checkTeamCell(this)'>" + match.r1 + "</td><td id='m" + match.matchNum + "r2' class='" + r2c + "' onclick='checkTeamCell(this)'>" + match.r2 + "</td><td id='m" + match.matchNum + "b1' class='" + b1c + "' onclick='checkTeamCell(this)'>" + match.b1 + "</td><td id='m" + match.matchNum + "b2' class='" + b2c + "' onclick='checkTeamCell(this)'>" + match.b2 + "</td>" + buttonStr + "</tr>";
+	var str = "<tr id='m" + match.matchNum + "'><td>" + match.matchNum + "</td><td id='m" + match.matchNum + "r1' class='" + r1c + "' onclick='checkTeamCell(this)'>" + match.r1 + "</td><td id='m" + match.matchNum + "r2' class='" + r2c + "' onclick='checkTeamCell(this)'>" + match.r2 + "</td><td id='m" + match.matchNum + "r3' class='" + r3c + "' onclick='checkTeamCell(this)'>" + match.r3 + "</td><td id='m" + match.matchNum + "b1' class='" + b1c + "' onclick='checkTeamCell(this)'>" + match.b1 + "</td><td id='m" + match.matchNum + "b2' class='" + b2c + "' onclick='checkTeamCell(this)'>" + match.b2 + "</td><td id='m" + match.matchNum + "b3' class='" + b3c + "' onclick='checkTeamCell(this)'>" + match.b3 + "</td>" +  buttonStr + "</tr>";
 	$("#matchList").append(str);
 }
 
